@@ -1,7 +1,8 @@
 # Optimization-on-Graph-Neural-Network
 Author: Prince Kumar
+
 Project Overview
-This project explores a hardware-software (HW-SW) co-optimization approach aimed at reducing the inference latency and training time of Graph Neural Networks (GNNs). GNNs, with their large adjacency matrices, pose significant computational challenges during training and inference. This study leverages adjacency matrix re-arrangement and graph partitioning techniques, combined with GPU acceleration, to improve performance with manageable accuracy trade-offs.
+This project explores a hardware-software (HW-SW) co-optimization approach to reduce the inference latency and training time of Graph Neural Networks (GNNs). GNNs, with their large adjacency matrices, pose significant computational challenges during training and inference. This study leverages adjacency matrix re-arrangement graph partitioning techniques and GPU acceleration to improve performance with manageable accuracy trade-offs.
 
 Key Contributions:
 Software Optimization: Partitioning graphs into smaller sub-graphs and re-arranging adjacency matrices to group highly connected nodes, reducing computational complexity.
@@ -36,9 +37,13 @@ GNN Models
 The following GNN architectures were used:
 
 Graph Convolutional Network (GCN)
+
 Graph Isomorphism Network (GIN)
+
 GraphSAGE
+
 Simple Graph Convolution (SGC)
+
 Results
 Baseline Performance
 Dataset	Model	  Training Time (ms)	    Inference Latency (ms)	        Test Accuracy
@@ -55,17 +60,7 @@ GCN	        21.47	                3.56	               83.40%
 GIN	        80.72	                3.34	               95.85%
 
 Conclusion
-This project demonstrates that HW-SW co-optimization for GNNs can significantly reduce training time and inference latency with manageable losses in accuracy. Future work will focus on further optimizing partitioning techniques and applying the approach to more real-world applications and hardware accelerators.
-
-Installation
-To reproduce the experiments, follow these steps:
-
-git clone https://github.com/your-repository-link
-cd your-repository-link
-Install required dependencies:
-
-pip install -r requirements.txt
-Run the experiments:
+This project demonstrates that HW-SW co-optimization for GNNs can significantly reduce training time and inference latency with manageable losses in accuracy. Future work will further optimize partitioning techniques and apply the approach to more real-world applications and hardware accelerators.
 
 References
 Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. ICLR.
